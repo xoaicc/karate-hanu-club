@@ -1,0 +1,15 @@
+.wrapper {
+    width: 24%;
+}
+
+.avatar {
+    
+}
+
+.subInfo {
+    display: flex;
+}
+
+.subInfo p {
+    width: 50%;
+}
