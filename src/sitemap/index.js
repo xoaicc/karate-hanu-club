@@ -11,11 +11,11 @@ export default function Root() {
                 </div>
                 
                 <nav>
-                    <NavLink className={styles.navLink} exact activeClassName={styles.isActive} to={"/"}>Trang chủ</NavLink>
-                    <NavLink className={styles.navLink} exact activeClassName={styles.isActive} to={"/page/about"}>Giới thiệu</NavLink>
-                    <NavLink className={styles.navLink} exact activeClassName={styles.isActive} to={"/page/member"}>Thành viên</NavLink>
-                    <NavLink className={styles.navLink} exact activeClassName={styles.isActive} to={"/page/moment"}>Khoảng khắc</NavLink>
-                    <NavLink className={styles.navLink} exact activeClassName={styles.isActive} to={"/page/contact"}>Liên hệ</NavLink>
+                    <NavLink className={navData => navData.isActive ? styles.navLinkActive : styles.navLink} to={"/"}>Trang chủ</NavLink>
+                    <NavLink className={navData => navData.isActive ? styles.navLinkActive : styles.navLink} to={"/page/about"}>Giới thiệu</NavLink>
+                    <NavLink className={navData => navData.isActive ? styles.navLinkActive : styles.navLink} to={"/page/member"}>Thành viên</NavLink>
+                    <NavLink className={navData => navData.isActive ? styles.navLinkActive : styles.navLink} to={"/page/moment"}>Khoảng khắc</NavLink>
+                    <NavLink className={navData => navData.isActive ? styles.navLinkActive : styles.navLink} to={"/page/contact"}>Liên hệ</NavLink>
                 </nav>
                 
                 <Button>

@@ -1,30 +1,18 @@
-import { useEffect, useState } from "react";
 import styles from "./homepage.module.css";
-import { Banner01, Banner02 } from "../../assets/images/Banner";
+import heroVideo from "../../assets/images/Banner/Karate-HANU-banner.mp4";
+import introImg from "../../assets/images/Intro/Karete-HANU-intro.png";
 import { MemberList } from "../../components/member/MemberList";
+import Button from "../../components/Button";
  
 export default function HomePage() {
-    const [bannerImg, setBannerImg] = useState(Banner01);
-
-    // useEffect(() => {
-    //     const bannerChanger = setInterval(() => {
-    //         setBannerImg(prevBannerImg => 
-    //             prevBannerImg === Banner01 ? Banner02 : Banner01
-    //         );
-    //     }, 5000);
-
-    //     return () => clearInterval(bannerChanger);
-    // }, []);
-
     return (
         <>
             <section id={styles.heroBanner}>
-                <div id={styles.heroImgContainer}>
-                    <img 
-                        src={bannerImg} 
-                        id={styles.heroImg}
-                        alt="Karate HANU banner" 
-                    />
+                <div id={styles.heroContainer}>
+                    <video id={styles.heroVideo} autoPlay muted>
+                        <source src={heroVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div id={styles.heroText} className="flat-block-static">
                     <h1>Karate HANU Club</h1>
@@ -50,7 +38,11 @@ export default function HomePage() {
                             </div>
                         </div>
                         <div id={styles.rightContainer}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas sed enim ut sem. Morbi tristique senectus et netus et malesuada fames ac.</p>
+                            <img 
+                            src={introImg} 
+                            id={styles.introImg}
+                            alt="Karate HANU intro" 
+                            />
                         </div>
                     </div>
                 </div>
@@ -72,8 +64,12 @@ export default function HomePage() {
             </section>
 
             <section id={styles.registerInvitationSec}>
-                <div className="container">
-                    <h2>Tham gia ngay!</h2>
+                <div className="container flat-block-static">
+                    <h2>Bạn có lời mời</h2>
+                    <div id={styles.invitation}>
+                        <h3>Tham gia với chúng mình ngay thôi nào!</h3>
+                        <Button to="/page/register">Đăng ký</Button>
+                    </div>
                 </div>
             </section>
         </>

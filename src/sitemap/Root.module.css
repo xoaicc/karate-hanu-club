@@ -3,7 +3,7 @@ header {
     top: 1%;
     left: 2.5%;
     width: 95%;
-    height: 50px;
+    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,22 @@ footer {
     margin-right: .5rem;
 }
 
-.isActive {
-    color: var(--color-4l-100);
-    text-transform: capitalize;
+.navLinkActive {
+    text-decoration: none;
+    color: inherit;
+    color: var(--color-5l-100);
+}
+.navLinkActive + .navLink {
+    margin-left: .5rem;
+}
+.navLinkActive + .navLink::before {
+    content: "•";
+    margin-right: .5rem;
+}
+.navLink + .navLinkActive {
+    margin-left: .5rem;
+}
+.navLink + .navLinkActive::before {
+    content: "•";
+    margin-right: .5rem;
 }

@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { MOMENTS } from "../../data/momentData";
+import { EVENTS } from "../../data/eventData";
 
-export const memberInfoSlice = createSlice({
-    name: "memberInfo",
-    initialState: MEMBERS,
+export const eventInfoSlice = createSlice({
+    name: "eventInfo",
+    initialState: EVENTS,
     reducers: {}
 });
 
-export const selectMembers = state => state.members;
-export default memberInfoSlice.reducer;
+export const selectEvents = state => state.events;
+export default eventInfoSlice.reducer;

@@ -2,29 +2,18 @@
 
 #heroBanner {
     height: 65vh;
-    background-color: var(--color-3l-100);
     position: relative;
 }
 
-#heroBanner #heroImgContainer {
+#heroBanner #heroContainer {
     display: flex;
     height: 100%;
     width: 100%;
-    animation: slideBanner 4s linear infinite;
 }
 
-/* @keyframes slideBanner {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-} */
-
-#heroBanner #heroImgContainer #heroImg {
-    height: 100%;
+#heroBanner #heroContainer #heroVideo {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -33,6 +22,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#heroBanner #heroText:hover {
+    opacity: 0;
+    cursor: default;
 }
 
 #heroBanner #heroText h1 {
@@ -102,6 +95,16 @@
     width: 38%;
 }
 
+#shortIntroSec #introContainer #rightContainer #introImg {
+    border: 3px solid var(--color-2l-100);
+    transform: rotate(-6deg) scale(.9);
+    transition: .5s;
+}
+#shortIntroSec #introContainer #rightContainer #introImg:hover {
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+
 #featureMemberSec {
     background-color: var(--color-3l-100);
 }
@@ -111,5 +114,26 @@
 }
 
 #registerInvitationSec {
-    background-color: var(--color-3l-100);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#registerInvitationSec::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/images/Footer/Footer.jpg") no-repeat center;
+    background-size: cover;
+    -webkit-filter: blur(.3rem);
+    filter: blur(.3rem);
+    z-index: -1;
+}
+
+#registerInvitationSec #invitation {
+    text-align: center;
 }
