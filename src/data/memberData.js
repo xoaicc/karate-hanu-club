@@ -1,5 +1,7 @@
-export const MEMBERS = {
-    "m01": {
+export const MEMBERS = [
+    {
+        id: "m01",
+        avatar: "m01.jpg",
         fullName: "Ngô Thế Văn",
         birthDate: "2000/03/31",
         gender: "Nam",
@@ -13,7 +15,9 @@ export const MEMBERS = {
         },
         isLeave: false
     },
-    "m02": {
+    {
+        id: "m02",
+        avatar: "m02.jpeg",
         fullName: "Đỗ Minh Vương",
         birthDate: "2001/02/02",
         gender: "Nam",
@@ -21,10 +25,10 @@ export const MEMBERS = {
         level: "",
         joinDate: "2022/08/15",
         socialMedia: {
-            facebook: "",
-            instagram: "",
-            zalo: ""
+            facebook: "vuong.xoaic",
+            instagram: "xoaicc",
+            zalo: "0383398867"
         },
         isLeave: false
     }
-}
+]

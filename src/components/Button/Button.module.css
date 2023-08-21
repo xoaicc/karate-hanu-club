@@ -1,0 +1,18 @@
+.button {
+    text-decoration: none;
+    background-color: var(--color-3l-50);
+    border-radius: .5rem;
+    padding: .5rem;
+    height: 2.5rem;
+    color: inherit;
+    cursor: pointer;
+}
+.button + .button {
+    margin-left: .3rem;
+}
+.button:nth-child(odd) {
+    border: 3px solid var(--color-2l-100);
+}
+.button:nth-child(even) {
+    border: 3px solid var(--color-4l-100);
+}

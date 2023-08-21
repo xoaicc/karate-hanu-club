@@ -3,6 +3,8 @@ import heroVideo from "../../assets/images/Banner/Karate-HANU-banner.mp4";
 import introImg from "../../assets/images/Intro/Karete-HANU-intro.png";
 import { MemberList } from "../../components/member/MemberList";
 import Button from "../../components/Button";
+import { EventList } from "../../components/event/EventList";
+import FlatBlock from "../../components/FlatBlock";
  
 export default function HomePage() {
     return (
@@ -14,27 +16,31 @@ export default function HomePage() {
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div id={styles.heroText} className="flat-block-static">
-                    <h1>Karate HANU Club</h1>
-                    <h3><span>Courage</span> or <span>fear</span> are your choice!</h3>
+                <div id={styles.heroText}>
+                    <FlatBlock center={true} transparent={true}>
+                        <h1>Karate HANU Club</h1>
+                        <h3><span>Courage</span> or <span>fear</span> are your choice!</h3>
+                    </FlatBlock>
                 </div>
             </section>
 
-            <section id={styles.shortIntroSec} className="flex-container">
+            <section id={styles.shortIntroSec}>
                 <div className="container">
                     <h2>Giới thiệu nhanh</h2>
                     <div id={styles.introContainer}>
                         <div id={styles.leftContainer}>
-                            <div id={styles.introDetail} className="flat-block-static">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas sed enim ut sem. Morbi tristique senectus et netus et malesuada fames ac.</p>
-                            </div>
-                            <div id={styles.statisticNumber} className="flex-container">
-                                <div className="half-container flat-block">
+                            <FlatBlock center={true}>
+                                <div id={styles.introDetail}>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas sed enim ut sem. Morbi tristique senectus et netus et malesuada fames ac.</p>
+                                </div>
+                            </FlatBlock>
+                            <div id={styles.statisticNumber}>
+                                <FlatBlock part="2" mix={true} center={true}>
                                     <h4><span className={styles.counterNumber}>5+</span>Years experience in Web development</h4>
-                                </div>
-                                <div className="half-container flat-block-2">
+                                </FlatBlock>
+                                <FlatBlock part="2" mix={true} center={true}>
                                     <h4><span className={styles.counterNumber}>10+</span>Large projects were released</h4>
-                                </div>
+                                </FlatBlock>
                             </div>
                         </div>
                         <div id={styles.rightContainer}>
@@ -51,25 +57,26 @@ export default function HomePage() {
             <section id={styles.featureMemberSec}>
                 <div className="container">
                     <h2>Thành viên nổi bật</h2>
-                    <div id={styles.memberContainer}>
-                        <MemberList />
-                    </div>
+                    <MemberList />
                 </div>
             </section>
 
-            <section id={styles.featureMomentSec}>
+            <section id={styles.featureEventSec}>
                 <div className="container">
                     <h2>Khoảng khắc nổi bật</h2>
+                    <EventList />
                 </div>
             </section>
 
             <section id={styles.registerInvitationSec}>
-                <div className="container flat-block-static">
-                    <h2>Bạn có lời mời</h2>
-                    <div id={styles.invitation}>
-                        <h3>Tham gia với chúng mình ngay thôi nào!</h3>
-                        <Button to="/page/register">Đăng ký</Button>
-                    </div>
+                <div className="container">
+                    <FlatBlock center={true} transparent={true}>
+                        <div id={styles.invitation}>
+                            <h2>Bạn có lời mời</h2>
+                            <h3>Tham gia với chúng mình ngay thôi nào!</h3>
+                            <Button to="/page/register">Đăng ký</Button>
+                        </div>
+                    </FlatBlock>
                 </div>
             </section>
         </>

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 #heroBanner {
-    height: 65vh;
+    min-height: 0;
+    height: 75vh;
     position: relative;
 }
 
@@ -9,11 +10,13 @@
     display: flex;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 #heroBanner #heroContainer #heroVideo {
+    transform: translateY(-15%);
     width: 100%;
-    height: 100%;
+    height: 140%;
     object-fit: cover;
 }
 
@@ -22,10 +25,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-#heroBanner #heroText:hover {
-    opacity: 0;
-    cursor: default;
 }
 
 #heroBanner #heroText h1 {
@@ -51,31 +50,29 @@
 }
 
 #shortIntroSec #introContainer #leftContainer {
-    width: 58%;
+    width: 50%;
 }
 
 #shortIntroSec #introContainer #leftContainer #introDetail {
-    height: 200px;
+    height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 #shortIntroSec #introContainer #leftContainer #statisticNumber {
     width: 80%;
-    justify-content: space-between;
+    display: flex;
     margin: 0 auto;
-    margin-top: -20px;
+    margin-top: -1.5rem;
 }
 
 #shortIntroSec #introContainer #leftContainer #statisticNumber div {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     position: relative;
-    height: 100px;
+    height: 8rem;
 }
 
 #shortIntroSec #introContainer #leftContainer #statisticNumber .counterNumber {
@@ -92,11 +89,14 @@
 }
 
 #shortIntroSec #introContainer #rightContainer {
-    width: 38%;
+    width: 50%;
+    padding: 5%;
 }
 
 #shortIntroSec #introContainer #rightContainer #introImg {
+    width: 100%;
     border: 3px solid var(--color-2l-100);
+    border-radius: .5rem;
     transform: rotate(-6deg) scale(.9);
     transition: .5s;
 }
@@ -109,7 +109,7 @@
     background-color: var(--color-3l-100);
 }
 
-#featureMomentSec {
+#featureEventSec {
     background-color: var(--color-3l-50);
 }
 
@@ -135,5 +135,52 @@
 }
 
 #registerInvitationSec #invitation {
-    text-align: center;
+    height: 8rem;
+    position: relative;
+}
+
+#registerInvitationSec #invitation h3 {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    #heroBanner {
+        height: 60vh;
+    }
+
+    #heroBanner #heroText {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        right: 5%;
+        transform: translateY(-50%);
+    }
+
+    #shortIntroSec #introContainer {
+        flex-direction: column-reverse;
+    }
+
+    #shortIntroSec #introContainer #leftContainer {
+        width: 100%;
+    }
+
+    #shortIntroSec #introContainer #leftContainer #introDetail {
+        height: 15rem;
+    }
+
+    #shortIntroSec #introContainer #leftContainer #statisticNumber {
+        width: 90%;
+    }
+
+    #shortIntroSec #introContainer #leftContainer #statisticNumber div {
+        height: 10rem;
+    }
+
+    #shortIntroSec #introContainer #rightContainer {
+        width: 100%;
+    }
+
+    #registerInvitationSec #invitation {
+        height: 10rem;
+    }
 }

@@ -1,0 +1,68 @@
+.wrapper {
+    padding: .5rem;
+    cursor: default;
+    background-color: var(--color-3l-100);
+    border: 3px solid var(--color-4l-100);
+    border-radius: .5rem;
+}
+.wrapper.transparent {
+    background-color: var(--color-3l-50);
+}
+.wrapper.transparent:hover {
+    background-color: var(--color-3l-100);
+}
+.wrapper.mix:nth-child(odd) {
+    border: 3px solid var(--color-2l-100);
+    box-shadow: 6px 6px 0 var(--color-1l-100);
+    transform: translate(-3px, -3px);
+    transition: .3s;
+}
+.wrapper.mix:nth-child(odd):hover {
+    box-shadow: none;
+    transform: translate(0, 0);
+    transition: .3s;
+}
+.wrapper.mix:nth-child(even) {
+    transition: .3s;
+}
+.wrapper.mix:nth-child(even):hover {
+    box-shadow: 6px 6px 0 var(--color-5l-100);
+    transform: translate(-3px, -3px);
+    transition: .3s;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 49%;
+}
+.half + .half {
+    margin-left: 2%;
+}
+
+.third {
+    width: 32.33%;
+}
+.third + .third {
+    margin-left: 1.5%;
+}
+
+.forth {
+    width: 24.25%;
+}
+.forth + .forth {
+    margin-left: 1%;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .third,
+    .forth {
+        width: 19rem;
+    }
+}

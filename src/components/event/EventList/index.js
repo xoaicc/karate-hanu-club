@@ -5,10 +5,14 @@ import styles from "./EventList.module.css";
 
 export function EventList() {
     const events = useSelector(selectEvents);
+    const featuredEvents = events.filter(event => event.featured === true);
+    const sortedEvents = featuredEvents.reverse();
 
     return (
         <div className={styles.container}>
-            {Object.keys(events).map((eventId, i) => <EventBox key={i} info={members[eventId]} />)}
+            <div className={styles.wrapper}>
+                {sortedEvents.map((event, i) => <EventBox key={i} info={event} />)}
+            </div>
         </div>
     );
 }

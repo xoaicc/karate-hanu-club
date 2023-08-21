@@ -1,7 +1,7 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import Root from "../sitemap";
 import HomePage from "../sitemap/homepage";
-import Page, { AboutPage, ContactPage, MemberPage, MomentPage, RegisterPage } from "../sitemap/pages";
+import Page, { AboutPage, ContactPage, MemberPage, EventPage, RegisterPage } from "../sitemap/pages";
 
 export default function App() {
     const router = createBrowserRouter(createRoutesFromElements(
@@ -11,7 +11,7 @@ export default function App() {
                 <Route path="about" element={ <AboutPage /> } />
                 <Route path="contact" element={ <ContactPage /> } />
                 <Route path="member" element={ <MemberPage /> } />
-                <Route path="moment" element={ <MomentPage /> } />
+                <Route path="event" element={ <EventPage /> } />
                 <Route path="register" element={ <RegisterPage /> } />
             </Route>
         </Route>

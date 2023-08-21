@@ -1,4 +1,6 @@
 import styles from "./MemberCard.module.css";
+import { ageIcon, genderIcon } from "../../../assets/icons";
+import FlatBlock from "../../FlatBlock";
 
 export function MemberCard({info}) {
     const calcAge = () => {
@@ -24,20 +26,20 @@ export function MemberCard({info}) {
     }
 
     return (
-        <div className={styles.wrapper}>
-            <img className={styles.avatar} alt="Member avater image" />
+        <FlatBlock part="4" mix={true} center={true}>
+            <img src={require(`../../../assets/images/Member/${info.avatar}`)} className={styles.avatar} alt="Member avatar" />
             <h3>{info.fullName}</h3>
             <h4>{info.role}</h4>
             <div className={styles.subInfo}>
-                <p>Age: {calcAge()}</p>
-                <p>Gender: {info.gender}</p>
+                <p>{ageIcon} {calcAge()}</p>
+                <p>{genderIcon} {info.gender}</p>
             </div>
             {!info.isLeave && <p>Đã tham gia {calcActiceDate()} tháng</p>}
             <div className={styles.socialBar}>
-                <a>F</a>
-                <a>I</a>
-                <a>Z</a>
+                <a href={`https://www.facebook.com/${info.socialMedia.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>
+                <a href={`https://www.instagram.com/${info.socialMedia.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>
+                <a href={`https://zalo.me/${info.socialMedia.zalo}`}><img src={require("../../../assets/images/SocialLogo/zalo-logo.png")} alt="Zalo logo" /></a>
             </div>
-        </div>
+        </FlatBlock>
     );
 }

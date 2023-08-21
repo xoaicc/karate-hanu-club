@@ -47,39 +47,6 @@ h3 {
   margin: 10px 0;
 }
 
-ul li {
-  list-style-type: none;
-}
-
-i {
-  font-size: .8rem;
-  color: inherit;
-  padding: 3px;
-  display: inline-flex;
-  align-items: center;
-}
-
-i::before {
-  line-height: 0;
-}
-
-button, select {
-  background-color: var(--color-3l-100);
-  border: 3px solid var(--color-2l-100);
-  padding: 5px;
-  height: 100%;
-  cursor: pointer;
-}
-button + button {
-  background-color: var(--color-3l-100);
-  border: 3px solid var(--color-4l-100);
-}
-
-button a {
-  text-decoration: none;
-  color: inherit;
-}
-
 input, textarea {
   width: 100%;
   background-color: var(--color-0l-100);
@@ -102,6 +69,10 @@ input[type="submit"] {
   padding: 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 ::-moz-selection {
   background-color: var(--color-2l-50);
 }
@@ -111,59 +82,14 @@ input[type="submit"] {
 }
 
 section {
-  min-height: 50vh;
-}
-
-.hidden {
-  display: none;
-}
-
-.text-center {
-  text-align: center;
+  min-height: 80vh;
+  width: 100%;
 }
 
 .container {
-  padding: 5%;
+  padding: 4%;
 }
 
 .half-container {
   width: 48%;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flat-block {
-  padding: 10px;
-  background-color: var(--color-3l-100);
-  border: 3px solid var(--color-2l-100);
-  box-shadow: -6px 6px 0 var(--color-1l-100);
-  transform: translate(3px, -3px);
-  transition: .3s;
-}
-.flat-block:hover, .flat-block:active {
-  box-shadow: none;
-  transform: translate(0, 0);
-  transition: .3s;
-}
-
-.flat-block-2 {
-  padding: 10px;
-  background-color: var(--color-3l-100);
-  border: 3px solid var(--color-4l-100);
-  transition: .3s;
-}
-.flat-block-2:hover, .flat-block-2:active {
-  box-shadow: -6px 6px 0 var(--color-5l-100);
-  transform: translate(3px, -3px);
-  transition: .3s;
-}
-
-.flat-block-static {
-  padding: 10px;
-  background-color: var(--color-3l-100);
-  border: 3px solid var(--color-4l-100);
 }

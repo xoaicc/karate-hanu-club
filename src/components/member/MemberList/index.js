@@ -8,7 +8,9 @@ export function MemberList() {
 
     return (
         <div className={styles.container}>
-            {Object.keys(members).map((memberId, i) => <MemberCard key={i} info={members[memberId]} />)}
+            <div className={styles.wrapper}>
+                {members.map((member, i) => <MemberCard key={i} info={member} />)}
+            </div>
         </div>
     );
 }
