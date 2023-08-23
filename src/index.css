@@ -47,19 +47,24 @@ h3 {
   margin: 10px 0;
 }
 
-input, textarea {
-  width: 100%;
+li {
+  list-style: none;
+}
+
+input, textarea, select {
+  padding: 3px;
   background-color: var(--color-0l-100);
   border: 3px solid var(--color-2l-100);
-  padding: 3px;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-input:focus, textarea:focus, select[data-chosen] {
+input:focus, textarea:focus, select:focus {
   outline: none;
+  border: 3px solid var(--color-5l-100);
 }
 
-input:focus, textarea:focus {
-  border: 3px solid var(--color-5l-100);
+input[type="radio"] {
+  accent-color: var(--color-2l-100);
 }
 
 input[type="submit"] {

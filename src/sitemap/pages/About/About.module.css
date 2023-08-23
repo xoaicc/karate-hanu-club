@@ -1,0 +1,92 @@
+.container {
+    padding: 8%;
+    background-color: var(--color-3l-50);
+    text-align: justify;
+}
+
+.container .section {
+    min-height: 60vh;
+    min-height: 60dvh;
+    position: relative;
+}
+.container .section + .section::before {
+    content: "***";
+    margin-top: -10%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.container .section.end {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.container .section * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container .section p {
+    width: 60%;
+}
+
+.container .section p::first-letter {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.container .section img {
+    width: 30%;
+    margin: 5%;
+    border: 3px solid var(--color-2l-100);
+    border-radius: .5rem;
+    transform: rotate(-6deg) scale(.9);
+    transition: .5s;
+}
+.container .section img:hover {
+    transform: rotate(0) scale(1);
+    transition: .5s;
+}
+
+.container .section.end p {
+    width: 100%;
+}
+
+.container .section.end img {
+    display: block;
+    margin: 5% auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+    .container .section {
+        margin: 10rem 0;
+    }
+    .container .section + .section::before {
+        margin-top: -20%;
+    }
+
+    .container .section.end {
+        width: 100%;
+    }
+
+    .container .section p {
+        width: 100%;
+    }
+
+    .container .section img {
+        margin: 5% auto;
+        width: 100%;
+    }
+
+    .container .section img + p {
+        margin-top: 1rem;
+    }
+
+    .container .section.end img {
+        width: 100%;
+    }
+}

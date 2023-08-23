@@ -1,0 +1,11 @@
+.container {
+    padding: 5%;
+    min-height: 75vh;
+    min-height: 75dvh;
+    background-color: var(--color-3l-50);
+}
+
+.filter {
+    margin: 0 auto;
+    width: 50%;
+}

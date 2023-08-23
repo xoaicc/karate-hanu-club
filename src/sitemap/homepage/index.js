@@ -7,6 +7,8 @@ import { EventList } from "../../components/event/EventList";
 import FlatBlock from "../../components/FlatBlock";
  
 export default function HomePage() {
+    document.title = "Câu lạc bộ Karate HANU";
+
     return (
         <>
             <section id={styles.heroBanner}>
@@ -64,7 +66,7 @@ export default function HomePage() {
             <section id={styles.featureEventSec}>
                 <div className="container">
                     <h2>Khoảng khắc nổi bật</h2>
-                    <EventList />
+                    <EventList featured={true} />
                 </div>
             </section>
 

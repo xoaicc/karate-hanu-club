@@ -1,0 +1,20 @@
+.container {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    background-color: var(--color-3l-50);
+}
+
+form {
+    margin: auto;
+    width: 40%;
+}
+
+form div {
+    margin: .5rem 0;
+    width: 100%;
+}
+
+form div input {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+#pageTitle {
+    height: 35vh;
+    height: 35dvh;
+    color: var(--color-5l-50);
+    background-color: var(--color-3l-100);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 480px) {
+    #pageTitle {
+        height: 25vh;
+        height: 25dvh;
+        padding: 4rem 1rem;
+    }
+}

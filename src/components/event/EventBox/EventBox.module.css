@@ -1,8 +1,7 @@
 .wrapper {
+    margin-left: 1%;
     width: 24%;
-}
-.wrapper + .wrapper {
-    margin-left: 1.33%;
+    height: 20rem;
 }
 
 .collections {
@@ -59,9 +58,7 @@
 
 @media only screen and (max-width: 480px) {
     .wrapper {
+        margin: 0 auto;
         width: 19rem;
-    }
-    .wrapper + .wrapper {
-        margin-left: 1rem;
     }
 }

@@ -14,7 +14,7 @@ export default function Button({
 
     if (to) {
         btn = 
-        <Link to={to} className={`${styles.button} ${plusClass}`}>
+        <Link to={to} className={`${styles.button} ${plusClass}`}  onClick={onClickFunc}>
             {children}
         </Link>;
     }
