@@ -2,6 +2,7 @@ import styles from "./Root.module.css";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import Button from "../components/Button";
 import { menuIcon } from "../assets/icons";
+// import logo from "public/assets/main-logo.png";
 
 export default function Root() {
     const toggleMobileMenu = () => {
@@ -18,7 +19,7 @@ export default function Root() {
         <>
             <header>
                 <Link to="/" onClick={addMobileMenu}>
-                    <img alt="Our logo" />
+                    {/* <img src={logo} alt="Our logo" /> */}
                 </Link>
                 
                 <nav className={styles.onlyDesktop}>

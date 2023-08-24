@@ -7,8 +7,6 @@ import { EventList } from "../../components/event/EventList";
 import FlatBlock from "../../components/FlatBlock";
  
 export default function HomePage() {
-    document.title = "Câu lạc bộ Karate HANU";
-
     return (
         <>
             <section id={styles.heroBanner}>

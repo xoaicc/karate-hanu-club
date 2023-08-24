@@ -15,6 +15,52 @@ form div {
     width: 100%;
 }
 
-form div input {
-    width: 100%;
+form div label span {
+    vertical-align: super;
+    color: var(--color-5l-100);
+}
+
+form div label:first-child {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+form div input:not(input[type="radio"]):not(input[type="submit"]),
+form div select {
+    display: inline-block;
+    width: 60%;
+    border-radius: .5rem;
+}
+form div input + label {
+    margin-left: 2%;
+    margin-right: 5%;
+}
+form div input[type="radio"] {
+    accent-color: var(--color-2l-100);
+}
+form div input[type="submit"] {
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 5px;
+    display: block;
+    width: 50%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+form div div label img {
+    vertical-align: bottom;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+
+    form div input + label {
+        margin-left: 1%;
+        margin-right: 4%;
+    }
 }

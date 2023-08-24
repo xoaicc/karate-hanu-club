@@ -5,11 +5,11 @@ import FlatBlock from "../../FlatBlock";
 export function MemberCard({info}) {
     const calcAge = () => {
         const today = new Date();
-        const birthDate = new Date(info.birthDate);
+        const birthday = new Date(info.birthday);
 
-        let age = today.getFullYear() - birthDate.getFullYear();
-        const monDiff = today.getMonth() < birthDate.getMonth();
-        if (monDiff < 0 || (monDiff === 0 && today.getDay() < birthDate.getDay())) {
+        let age = today.getFullYear() - birthday.getFullYear();
+        const monDiff = today.getMonth() < birthday.getMonth();
+        if (monDiff < 0 || (monDiff === 0 && today.getDay() < birthday.getDay())) {
             age--;
         }
 
@@ -36,9 +36,9 @@ export function MemberCard({info}) {
             </div>
             {!info.isLeave && <p>Đã tham gia {calcActiceDate()} tháng</p>}
             <div className={styles.socialBar}>
-                <a href={`https://www.facebook.com/${info.socialMedia.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>
-                <a href={`https://www.instagram.com/${info.socialMedia.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>
-                <a href={`https://zalo.me/${info.socialMedia.zalo}`}><img src={require("../../../assets/images/SocialLogo/zalo-logo.png")} alt="Zalo logo" /></a>
+                <a href={`https://www.facebook.com/${info.socialProfile.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>
+                <a href={`https://www.instagram.com/${info.socialProfile.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>
+                <a href={`https://zalo.me/${info.socialProfile.zalo}`}><img src={require("../../../assets/images/SocialLogo/zalo-logo.png")} alt="Zalo logo" /></a>
             </div>
         </FlatBlock>
     );
