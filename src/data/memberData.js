@@ -13,6 +13,7 @@ export const MEMBERS = [
             instagram: "",
             zalo: ""
         },
+        featured: true,
         isLeave: false
     },
     {
@@ -29,6 +30,58 @@ export const MEMBERS = [
             instagram: "xoaicc",
             zalo: "0383398867"
         },
+        featured: true,
+        isLeave: false
+    },
+    {
+        id: "m03",
+        avatar: "m02.jpeg",
+        fullName: "Đỗ Minh Vương",
+        birthday: "2001/02/02",
+        gender: "Nam",
+        role: "Phó chủ nhiệm CLB",
+        level: "",
+        joinDate: "2022/08/15",
+        socialProfile: {
+            facebook: "vuong.xoaic",
+            instagram: "xoaicc",
+            zalo: "0383398867"
+        },
+        featured: true,
+        isLeave: false
+    },
+    {
+        id: "m04",
+        avatar: "m02.jpeg",
+        fullName: "Đỗ Minh Vương",
+        birthday: "2001/02/02",
+        gender: "Nam",
+        role: "Phó chủ nhiệm CLB",
+        level: "",
+        joinDate: "2022/08/15",
+        socialProfile: {
+            facebook: "vuong.xoaic",
+            instagram: "xoaicc",
+            zalo: "0383398867"
+        },
+        featured: true,
+        isLeave: false
+    },
+    {
+        id: "m05",
+        avatar: "m02.jpeg",
+        fullName: "Đỗ Minh Vương",
+        birthday: "2001/02/02",
+        gender: "Nam",
+        role: "Phó chủ nhiệm CLB",
+        level: "",
+        joinDate: "2022/08/15",
+        socialProfile: {
+            facebook: "vuong.xoaic",
+            instagram: "xoaicc",
+            zalo: "0383398867"
+        },
+        featured: false,
         isLeave: false
     }
 ]

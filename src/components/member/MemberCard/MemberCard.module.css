@@ -1,3 +1,7 @@
+.wrapper {
+    height: 26rem;
+}
+
 .avatar {
     height: 50%;
     border: 3px solid var(--color-5l-50);

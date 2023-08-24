@@ -57,7 +57,7 @@ export default function HomePage() {
             <section id={styles.featureMemberSec}>
                 <div className="container">
                     <h2>Thành viên nổi bật</h2>
-                    <MemberList />
+                    <MemberList featured={true} />
                 </div>
             </section>
 
