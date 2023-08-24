@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 import styles from "./Register.module.css";
 import FlatBlock from "../../../components/FlatBlock";
 
@@ -9,12 +9,12 @@ export default function RegisterPage() {
     const handleSubmit = e => {
         e.preventDefault();
     
-        emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
-            .then(() => {
-                alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
-            }, () => {
-                alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
-            });
+        // emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
+        //     .then(() => {
+        //         alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
+        //     }, () => {
+        //         alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
+        //     });
     };
 
     return (

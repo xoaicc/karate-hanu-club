@@ -1,4 +1,5 @@
 .wrapper {
+    margin-bottom: 2rem;
     padding: .5rem;
     cursor: default;
     background-color: var(--color-3l-100);
