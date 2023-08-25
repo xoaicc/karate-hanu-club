@@ -4,6 +4,7 @@ import ContactPage from "./Contact";
 import MemberPage from "./Member";
 import EventPage from "./Event";
 import RegisterPage from "./Register";
+import PageNotFound from "./PageNotFound";
 import styles from "./Page.module.css";
 
 export default function Page() {
@@ -43,4 +44,4 @@ export default function Page() {
     );
 }
 
-export { AboutPage, ContactPage, MemberPage, EventPage, RegisterPage };
+export { AboutPage, ContactPage, MemberPage, EventPage, RegisterPage, PageNotFound };

@@ -1,0 +1,24 @@
+.container {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3l-50);
+}
+
+.content {
+    width: 50%;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+@media only screen and (max-width: 480px){
+    .content {
+        width: 90%;
+    }
+}

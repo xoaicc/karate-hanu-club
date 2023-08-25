@@ -8,12 +8,12 @@ export default function ContactPage() {
                 <FlatBlock mix={true} transparent={true}>
                     <h3>Thông tin liên hệ</h3>
                     <ul id={styles.contactInfo}>
-                        <li>Trang mạng: <br /><span>Karatehanu.club</span></li>
-                        <li>Vị trí: <br /><span>Sảnh C, Trường Đại học Hà Nội</span></li>
-                        <li>Điện thoại: <br /><span>+84 123 456 789</span></li>
-                        <li>Hòm thư: <br /><span>Karatehanu@starblue.one</span></li>
-                        <li>Fanpage: <br /><span>www.facebook.com/profile.php?id=100083074043354</span></li>
-                        <li>Nhóm Facebook: <br /><span>www.facebook.com/groups/karatedo.hanu</span></li>
+                        <li>Trang mạng: <br /><span><a href="/">Karatehanu.club</a></span></li>
+                        <li>Vị trí: <br /><span><a href="https://goo.gl/maps/bDpzg1dEJjcVvb527">Sảnh C, Trường Đại học Hà Nội</a></span></li>
+                        <li>Điện thoại: <br /><span><a href="tel:+84378890297">+84 378 890 297</a></span></li>
+                        <li>Hòm thư: <br /><span><a href="mailto:karatehanu@starblue.one">Karatehanu@starblue.one</a></span></li>
+                        <li>Fanpage: <br /><span><a href="https://www.facebook.com/profile.php?id=100083074043354">CLB karatedo hannu Đại Học Hà Nội city</a></span></li>
+                        <li>Nhóm Facebook: <br /><span><a href="https://www.facebook.com/groups/karatedo.hanu">CLB Karatedo HANU (ĐH Hà Nội)</a></span></li>
                     </ul>
                 </FlatBlock>
             </div>

@@ -64,7 +64,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 ::-moz-selection {
@@ -73,6 +73,10 @@ input:focus, textarea:focus, select:focus {
 
 ::selection {
   background-color: var(--color-2l-50);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 section {

@@ -29,6 +29,14 @@
     background-color: var(--color-2l-50);
 }
 
+#leftContainer #contactInfo li span a {
+    color: inherit;
+    text-decoration: none;
+}
+#leftContainer #contactInfo li span a:hover {
+    text-decoration: underline;
+}
+
 #mapsContainer {
     width: 100%;
     height: 100%;

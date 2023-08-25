@@ -25,6 +25,14 @@ header:hover {
     transition: .3s;
 }
 
+header #flogo {
+    height: 100%;
+}
+
+header #flogo img {
+    height: 100%;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -65,6 +73,34 @@ footer {
 .navLink + .navLinkActive::before {
     content: "•";
     margin-right: .5rem;
+}
+
+.modalBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 3;
+}
+
+.modalBox .closeBtn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
+.modalBox .modalSection {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media only screen and (max-width: 480px) {

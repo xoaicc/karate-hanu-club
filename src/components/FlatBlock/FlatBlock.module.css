@@ -1,10 +1,9 @@
 .wrapper {
-    margin-bottom: 2rem;
     padding: .5rem;
-    cursor: default;
     background-color: var(--color-3l-100);
     border: 3px solid var(--color-4l-100);
     border-radius: .5rem;
+    cursor: default;
 }
 .wrapper.transparent {
     background-color: var(--color-3l-50);
@@ -34,31 +33,31 @@
 
 .full {
     width: 100%;
+    margin: 0 .5%;
 }
 
 .half {
     width: 49%;
-}
-.half + .half {
-    margin-left: 2%;
+    margin: 0 .5%;
 }
 
 .third {
     width: 32.33%;
-}
-.third + .third {
-    margin-left: 1.5%;
+    margin: 0 .5%;
 }
 
 .forth {
-    width: 24.25%;
-}
-.forth + .forth {
-    margin-left: 1%;
+    width: 24%;
+    margin: 0 .5%;
 }
 
 .center {
     text-align: center;
+}
+
+.multiple {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 480px) {

@@ -1,8 +1,9 @@
 import styles from "./FlatBlock.module.css";
 
-export default function Block({
+export default function FlatBlock({
     part = "1",
     mix = false,
+    multiple = false,
     center = false,
     transparent = false,
     children
@@ -25,6 +26,7 @@ export default function Block({
             break;
     }
     if (mix) customStyle += ` ${styles.mix}`;
+    if (multiple) customStyle += ` ${styles.multiple}`;
     if (center) customStyle += ` ${styles.center}`;
     if (transparent) customStyle += ` ${styles.transparent}`;
 

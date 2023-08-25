@@ -7,19 +7,21 @@ import { EventList } from "../../components/event/EventList";
 import FlatBlock from "../../components/FlatBlock";
  
 export default function HomePage() {
+    document.title = "Trang chủ | CLB Karate HANU";
+
     return (
         <>
             <section id={styles.heroBanner}>
                 <div id={styles.heroContainer}>
                     <video id={styles.heroVideo} autoPlay muted>
                         <source src={heroVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
                     </video>
                 </div>
                 <div id={styles.heroText}>
                     <FlatBlock center={true} transparent={true}>
                         <h1>Karate HANU Club</h1>
-                        <h3><span>Courage</span> or <span>fear</span> are your choice!</h3>
+                        <h3><span>Can đảm</span> hay <span>sợ hãi</span> là do bạn lựa chọn!</h3>
                     </FlatBlock>
                 </div>
             </section>

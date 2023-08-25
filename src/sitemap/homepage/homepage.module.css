@@ -68,11 +68,14 @@
 }
 
 #shortIntroSec #introContainer #leftContainer #statisticNumber div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     height: 8rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#shortIntroSec #introContainer #leftContainer #statisticNumber div + div {
+    margin-left: 1%;
 }
 
 #shortIntroSec #introContainer #leftContainer #statisticNumber .counterNumber {
@@ -149,11 +152,7 @@
     }
 
     #heroBanner #heroText {
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        right: 5%;
-        transform: translateY(-50%);
+        display: none;
     }
 
     #shortIntroSec #introContainer {

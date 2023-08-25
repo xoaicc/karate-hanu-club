@@ -7,16 +7,16 @@ export default function Button({
     onClickFunc = () => {}, 
     children
 }) {
-    let btn = 
+    let btn = (
     <button type="button" className={`${styles.button} ${plusClass}`} onClick={onClickFunc}>
         {children}
-    </button>;
+    </button>);
 
     if (to) {
-        btn = 
+        btn = (
         <Link to={to} className={`${styles.button} ${plusClass}`}  onClick={onClickFunc}>
             {children}
-        </Link>;
+        </Link>);
     }
 
     return btn;

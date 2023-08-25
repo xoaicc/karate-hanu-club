@@ -1,20 +1,23 @@
 import { useRef } from "react";
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import styles from "./Register.module.css";
 import FlatBlock from "../../../components/FlatBlock";
 
 export default function RegisterPage() {
-    const form = useRef();
+    const form = useRef({});
     const getCurrentTime = () => new Date().getFullYear();
     const handleSubmit = e => {
         e.preventDefault();
     
-        // emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
-        //     .then(() => {
-        //         alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
-        //     }, () => {
-        //         alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
-        //     });
+        emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
+            .then(() => {
+                alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
+            }, () => {
+                alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
+            });
+        
+        e.target.reset();
+        e.target.submit.disabled = true;
     };
 
     return (
@@ -26,7 +29,7 @@ export default function RegisterPage() {
                         <input type="text" name="fullName" id="fullName" placeholder="Nguyễn Văn A" required />
                     </div>
                     <div>
-                        <label htmlFor="email">Địa chỉ email: <span>*</span></label>
+                        <label htmlFor="email">Email: <span>*</span></label>
                         <input type="email" name="email" id="email" placeholder="vi_du@gmail.com" required />
                     </div>
                     <div>
@@ -52,8 +55,8 @@ export default function RegisterPage() {
                     <div>
                         <label>Liên kết MXH:</label><br />
                         <div>
-                            <label htmlFor="facebook"><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" />Facebook <span>*</span></label>
-                            <input type="text" name="facebook" id="facebook" placeholder="https://www.facebook.com/my-link" required />
+                            <label htmlFor="facebook"><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" />Facebook</label>
+                            <input type="text" name="facebook" id="facebook" placeholder="https://www.facebook.com/my-link" />
                         </div>
                         <div>
                             <label htmlFor="instagram"><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" />Instagram</label>
@@ -65,7 +68,7 @@ export default function RegisterPage() {
                         </div>
                     </div>
                     <div>
-                        <input type="submit" value="Gửi đơn" />
+                        <input type="submit" id="submit" value="Gửi đơn" disabled={false} />
                     </div>
                 </FlatBlock>
             </form>
