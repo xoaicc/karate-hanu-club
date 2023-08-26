@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Cookies from "js-cookie";
 import emailjs from "emailjs-com";
 import styles from "./Register.module.css";
 import FlatBlock from "../../../components/FlatBlock";
@@ -13,7 +14,8 @@ export default function RegisterPage() {
             .then(() => {
                 alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
                 e.target.reset();
-                e.target.submit.disabled = true;
+                Cookies.set("form submission", true);
+                window.location.reload();
             }, () => {
                 alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
             });
@@ -67,7 +69,7 @@ export default function RegisterPage() {
                         </div>
                     </div>
                     <div>
-                        <input type="submit" id="submit" value="Gửi đơn" disabled={false} />
+                        {Cookies.get("form submission") ? <input type="submit" id="submit" value="Đã gửi rồi!" disabled /> : <input type="submit" id="submit" value="Gửi đơn" />}
                     </div>
                 </FlatBlock>
             </form>

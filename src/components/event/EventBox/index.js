@@ -1,12 +1,17 @@
+import { useDispatch } from "react-redux/es/exports";
 import styles from "./EventBox.module.css";
 import MomentCard from "./MomentCard";
+import { selectEvent } from "../eventInfoSlice";
 
 export function EventBox({info}) {
     const momentCards = [];
+    const dispatch = useDispatch();
 
     const openModalBox = () => {
         const modalBox = document.getElementById("modal-box");
         modalBox.classList.remove("hidden");
+
+        dispatch(selectEvent(info.id));
     };
 
     const getMomentCards = () => {

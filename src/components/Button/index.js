@@ -5,16 +5,22 @@ export default function Button({
     to, 
     plusClass = "", 
     onClickFunc = () => {}, 
+    disabled = false, 
     children
 }) {
+    let customStyles = `${styles.button}`;
+
+    if (plusClass) customStyles += ` ${plusClass}`;
+    if (disabled) customStyles += ` ${styles.disabled}`;
+
     let btn = (
-    <button type="button" className={`${styles.button} ${plusClass}`} onClick={onClickFunc}>
+    <button type="button" className={customStyles} onClick={onClickFunc} disabled={disabled}>
         {children}
     </button>);
 
     if (to) {
         btn = (
-        <Link to={to} className={`${styles.button} ${plusClass}`}  onClick={onClickFunc}>
+        <Link to={to} className={customStyles} onClick={onClickFunc} disabled={disabled}>
             {children}
         </Link>);
     }

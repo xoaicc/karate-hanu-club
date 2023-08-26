@@ -16,3 +16,7 @@
 .button:nth-child(even) {
     border: 3px solid var(--color-4l-100);
 }
+
+.disabled {
+    visibility: hidden;
+}

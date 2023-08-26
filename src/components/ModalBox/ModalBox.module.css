@@ -1,4 +1,4 @@
-.modalBox {
+.wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,17 +11,96 @@
     z-index: 3;
 }
 
-.modalBox .closeBtn {
+.closeBtn {
     position: absolute;
     top: .5rem;
     right: .5rem;
 }
 
-.modalBox .modalSection {
+.modalSection {
     margin: auto;
-    width: 90%;
     height: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.modalSection .secondBtn {
+    border: 3px solid var(--color-4l-100) !important;
+}
+
+.modalSection .modalContent {
+    padding: 5%;
+    height: 100%;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.modalSection .modalContent .modalContentInner {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+}
+
+.modalSection .modalContent .modalContentInner .card {
+    width: 70vw;
+    position: relative;
+}
+
+.modalSection .modalContent .modalContentInner .card img {
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: .5rem;
+}
+.modalSection .modalContent .modalContentInner .card:nth-child(odd) img {
+    border: 3px solid var(--color-2l-100);
+}
+.modalSection .modalContent .modalContentInner .card:nth-child(even) img {
+    border: 3px solid var(--color-4l-100);
+}
+
+.modalSection .modalContent .modalContentInner .card h3 {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-3l-100);
+}
+
+@media only screen and (max-width: 480px) {
+    .modalSection {
+        width: 100%;
+        position: relative;
+    }
+
+    .modalSection button {
+        position: absolute;
+        z-index: 4;
+    }
+    .modalSection button:first-child {
+        left: 0;
+    }
+    .modalSection button:last-child {
+        right: 0;
+    }
+
+    .modalSection .modalContent {
+        padding: 0%;
+        width: 100%;
+    }
+
+    .modalSection .modalContent .modalContentInner .card {
+        margin: auto 0;
+        width: 100vw;
+        width: 100dvw;
+    }
+
+    .modalSection .modalContent .modalContentInner .card img {
+        width: 80%;
+    }
 }

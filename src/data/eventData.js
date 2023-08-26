@@ -164,5 +164,6 @@ export const EVENTS = {
             ],
             featured: true
         }
-    ]
+    ],
+    isSelected: ""
 }
