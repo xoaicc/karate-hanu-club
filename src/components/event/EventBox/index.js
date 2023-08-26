@@ -7,9 +7,6 @@ export function EventBox({info}) {
     const openModalBox = () => {
         const modalBox = document.getElementById("modal-box");
         modalBox.classList.remove("hidden");
-        
-        const modalContent = modalBox.querySelector("#modal-content");
-        modalContent.innerHTML = {momentCards};
     };
 
     const getMomentCards = () => {

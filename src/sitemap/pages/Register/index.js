@@ -12,12 +12,11 @@ export default function RegisterPage() {
         emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
             .then(() => {
                 alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
+                e.target.reset();
+                e.target.submit.disabled = true;
             }, () => {
                 alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
             });
-        
-        e.target.reset();
-        e.target.submit.disabled = true;
     };
 
     return (

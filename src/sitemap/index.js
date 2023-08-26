@@ -1,7 +1,8 @@
 import styles from "./Root.module.css";
 import { Outlet, NavLink, Link } from "react-router-dom";
 import Button from "../components/Button";
-import { menuIcon, closeIcon, leftArrowIcon, rightArrowIcon } from "../assets/icons";
+import { menuIcon } from "../assets/icons";
+import ModalBox from "../components/ModalBox";
 
 export default function Root() {
     const toggleMobileMenu = () => {
@@ -12,11 +13,6 @@ export default function Root() {
     const addMobileMenu = () => {
         const mobileMenu = document.getElementById("mobile-menu");
         mobileMenu.classList.add("hidden");
-    }
-
-    const closeBox = () => {
-        const modalBox = document.getElementById("modal-box");
-        modalBox.classList.add("hidden");
     }
 
     return (
@@ -54,19 +50,12 @@ export default function Root() {
                 <Outlet />
             </main>
 
+            <ModalBox />
+
             <footer>
                 <p>Phát triển bởi <a href="https://xoaicc.dev">XoaiCC</a> bằng một tình yêu	&hearts;<br />
                 Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
             </footer>
-
-            <div id="modal-box" className={`${styles.modalBox} hidden`}>
-                <Button plusClass={styles.closeBtn} onClickFunc={closeBox}>{closeIcon}</Button>
-                <div className={styles.modalSection}>
-                    <Button>{leftArrowIcon}</Button>
-                    <div id="modal-content"></div>
-                    <Button>{rightArrowIcon}</Button>
-                </div>
-            </div>
         </>
     );
 }
