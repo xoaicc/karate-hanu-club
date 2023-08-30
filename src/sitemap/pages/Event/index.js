@@ -6,7 +6,7 @@ export default function EventPage() {
         <div className={styles.container}>
             <div className={styles.filter}>
                 <select name="filter">
-                        <option value="all" defaultValue="all">Tất cả</option>
+                    <option value="all" defaultValue="all">Tất cả</option>
                 </select>
             </div>
             <EventList />

@@ -1,10 +1,14 @@
 .button {
-    text-decoration: none;
-    background-color: var(--color-3l-50);
-    border-radius: .5rem;
-    padding: .5rem;
+    padding: 0 .5rem;
+    max-height: 100%;
     height: 2.5rem;
+    background-color: var(--color-3l-50);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: inherit;
+    border-radius: .5rem;
     cursor: pointer;
 }
 .button + .button {

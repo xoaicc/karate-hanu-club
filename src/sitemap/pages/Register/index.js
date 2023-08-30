@@ -69,7 +69,7 @@ export default function RegisterPage() {
                         </div>
                     </div>
                     <div>
-                        {Cookies.get("form submission") ? <input type="submit" id="submit" value="Đã gửi rồi!" disabled /> : <input type="submit" id="submit" value="Gửi đơn" />}
+                        <input type="submit" id="submit" disabled={Cookies.get("form submission")} value="Gửi đơn" />
                     </div>
                 </FlatBlock>
             </form>

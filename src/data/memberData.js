@@ -7,7 +7,7 @@ export const MEMBERS = [
         gender: "Nam",
         role: "Chủ nhiệm CLB",
         level: "",
-        joinDate: "2021/01/01",
+        joinDate: "2021-01-01",
         socialProfile: {
             facebook: "",
             instagram: "",
@@ -24,64 +24,13 @@ export const MEMBERS = [
         gender: "Nam",
         role: "Phó chủ nhiệm CLB",
         level: "",
-        joinDate: "2022/08/15",
+        joinDate: "2022-08-15",
         socialProfile: {
             facebook: "vuong.xoaic",
             instagram: "xoaicc",
             zalo: "0383398867"
         },
         featured: true,
-        isLeave: false
-    },
-    {
-        id: "m03",
-        avatar: "",
-        fullName: "Trần Tuấn Hưng",
-        birthday: "2002-11-05",
-        gender: "Nam",
-        role: "Thành viên",
-        level: "",
-        joinDate: "",
-        socialProfile: {
-            facebook: "",
-            instagram: "",
-            zalo: ""
-        },
-        featured: true,
-        isLeave: false
-    },
-    {
-        id: "m04",
-        avatar: "",
-        fullName: "",
-        birthday: "",
-        gender: "",
-        role: "",
-        level: "",
-        joinDate: "",
-        socialProfile: {
-            facebook: "",
-            instagram: "",
-            zalo: ""
-        },
-        featured: true,
-        isLeave: false
-    },
-    {
-        id: "m05",
-        avatar: "",
-        fullName: "Nguyễn Trần Ý An",
-        birthday: "2011-02-27",
-        gender: "Nữ",
-        role: "Thành viên",
-        level: "",
-        joinDate: "2022/08/15",
-        socialProfile: {
-            facebook: "",
-            instagram: "",
-            zalo: ""
-        },
-        featured: false,
         isLeave: false
     }
 ]
