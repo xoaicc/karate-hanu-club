@@ -6,8 +6,8 @@ export const MEMBERS = [
         birthday: "2000-03-31",
         gender: "Nam",
         role: "Chủ nhiệm CLB",
-        level: "",
-        joinDate: "2021-01-01",
+        level: "Đen tam đẳng",
+        joinDate: "2019-09-01",
         socialProfile: {
             facebook: "",
             instagram: "",
@@ -23,7 +23,7 @@ export const MEMBERS = [
         birthday: "2001-02-02",
         gender: "Nam",
         role: "Phó chủ nhiệm CLB",
-        level: "",
+        level: "Xanh dương KYU 7",
         joinDate: "2022-08-15",
         socialProfile: {
             facebook: "vuong.xoaic",

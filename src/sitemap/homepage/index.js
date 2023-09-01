@@ -1,11 +1,11 @@
 import styles from "./homepage.module.css";
-import heroVideo from "../../assets/images/Banner/Karate-HANU-banner.mp4";
+import heroVideo from "../../assets/clips/Banner/Karate-HANU-banner.mp4";
 import introImg from "../../assets/images/Intro/Karete-HANU-intro.png";
 import { MemberList } from "../../components/member/MemberList";
 import Button from "../../components/Button";
 import { EventList } from "../../components/event/EventList";
 import FlatBlock from "../../components/FlatBlock";
- 
+
 export default function HomePage() {
     document.title = "Trang chủ | CLB Karate HANU";
 
@@ -33,23 +33,23 @@ export default function HomePage() {
                         <div id={styles.leftContainer}>
                             <FlatBlock center={true}>
                                 <div id={styles.introDetail}>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas sed enim ut sem. Morbi tristique senectus et netus et malesuada fames ac.</p>
+                                    <p>Karate HANU, câu lạc bộ của sinh viên và dành cho sinh viên nằm tại trường Đại học Hà Nội. Đây vừa là nơi rèn luyện vui, khoẻ, có ích cho các bạn trẻ; vừa là sân chơi dành cho những người yêu thích bộ môn võ thuật nổi tiếng của Nhật Bản.</p>
                                 </div>
                             </FlatBlock>
                             <div id={styles.statisticNumber}>
                                 <FlatBlock part="2" mix={true} center={true}>
-                                    <h4><span className={styles.counterNumber}>5+</span>Years experience in Web development</h4>
+                                    <h4><span className={styles.counterNumber}>30+</span>Thành viên từng tham gia</h4>
                                 </FlatBlock>
                                 <FlatBlock part="2" mix={true} center={true}>
-                                    <h4><span className={styles.counterNumber}>10+</span>Large projects were released</h4>
+                                    <h4><span className={styles.counterNumber}>4+</span>Năm hoạt động</h4>
                                 </FlatBlock>
                             </div>
                         </div>
                         <div id={styles.rightContainer}>
-                            <img 
-                            src={introImg} 
-                            id={styles.introImg}
-                            alt="Karate HANU intro" 
+                            <img
+                                src={introImg}
+                                id={styles.introImg}
+                                alt="Karate HANU intro"
                             />
                         </div>
                     </div>

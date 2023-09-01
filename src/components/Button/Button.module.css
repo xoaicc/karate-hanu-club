@@ -7,16 +7,20 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
     color: inherit;
     border-radius: .5rem;
     cursor: pointer;
 }
-.button + .button {
+
+.button+.button {
     margin-left: .3rem;
 }
+
 .button:nth-child(odd) {
     border: 3px solid var(--color-2l-100);
 }
+
 .button:nth-child(even) {
     border: 3px solid var(--color-4l-100);
 }

@@ -3,17 +3,17 @@
   "name": "Câu lạc bộ Karate HANU",
   "icons": [
     {
-      "src": "ilogo-min.png",
+      "src": "images/ilogo-min.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "ilogo-max.png",
+      "src": "images/ilogo-max.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ilogo-max.png",
+      "src": "images/ilogo-max.png",
       "type": "image/png",
       "sizes": "512x512"
     }

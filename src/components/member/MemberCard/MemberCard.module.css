@@ -3,7 +3,7 @@
 }
 
 .avatar {
-    height: 50%;
+    height: 45%;
     border: 3px solid var(--color-5l-50);
     border-radius: 50%;
 }
@@ -12,8 +12,125 @@ h4 {
     margin-bottom: .5rem;
 }
 
+.belt {
+    height: 1.5rem;
+    width: calc(100% + 1rem + 6px);
+    position: relative;
+    left: calc(-.5rem - 3px);
+    line-height: 1.5rem;
+}
+
+.belt::before {
+    content: "";
+    height: 1.5rem;
+    width: 2rem;
+    position: absolute;
+    top: .3rem;
+    left: -2rem;
+}
+
+.belt::after {
+    content: "";
+    height: 1.5rem;
+    width: 2rem;
+    position: absolute;
+    top: .3rem;
+    right: -2rem;
+}
+
+.belt.white {
+    color: #000;
+    background-color: #fff;
+}
+
+.belt.white::before {
+    background-color: #fff;
+}
+
+.belt.white::after {
+    background-color: #fff;
+}
+
+.belt.yellow {
+    color: #000;
+    background-color: #ffff01;
+}
+
+.belt.yellow::before {
+    background-color: #ffff01;
+}
+
+.belt.yellow::after {
+    background-color: #ffff01;
+}
+
+.belt.blue {
+    color: #fff;
+    background-color: #0070c2;
+}
+
+.belt.blue::before {
+    background-color: #0070c2;
+}
+
+.belt.blue::after {
+    background-color: #0070c2;
+}
+
+.belt.green {
+    color: #000;
+    background-color: #90d151;
+}
+
+.belt.green::before {
+    background-color: #90d151;
+}
+
+.belt.green::after {
+    background-color: #90d151;
+}
+
+.belt.violet {
+    color: #fff;
+    background-color: #7030a0;
+}
+
+.belt.violet::before {
+    background-color: #7030a0;
+}
+
+.belt.violet::after {
+    background-color: #7030a0;
+}
+
+.belt.brown {
+    color: #fff;
+    background-color: #984907;
+}
+
+.belt.brown::before {
+    background-color: #984907;
+}
+
+.belt.brown::after {
+    background-color: #984907;
+}
+
+.belt.black {
+    color: #fff;
+    background-color: #000;
+}
+
+.belt.black::before {
+    background-color: #000;
+}
+
+.belt.black::after {
+    background-color: #000;
+}
+
 .subInfo {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +141,8 @@ h4 {
     border: 3px solid var(--color-2l-100);
     border-radius: .5rem;
 }
-.subInfo p + p {
+
+.subInfo p+p {
     border: 3px solid var(--color-4l-100);
 }
 
@@ -37,16 +155,19 @@ h4 {
     width: 2rem;
     height: 2rem;
     margin: auto;
-    padding: 1.6px; 
+    padding: 1.6px;
     border-radius: .5rem;
     cursor: pointer;
 }
-.socialBar a + a {
+
+.socialBar a+a {
     margin-left: .3rem;
 }
+
 .socialBar a:nth-child(odd) {
     border: 3px solid var(--color-2l-100);
 }
+
 .socialBar a:nth-child(even) {
     border: 3px solid var(--color-4l-100);
 }

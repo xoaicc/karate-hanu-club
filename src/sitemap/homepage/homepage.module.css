@@ -78,6 +78,10 @@
     margin-left: 1%;
 }
 
+#shortIntroSec #introContainer #leftContainer #statisticNumber div h4 {
+    margin: auto;
+}
+
 #shortIntroSec #introContainer #leftContainer #statisticNumber .counterNumber {
     font-size: 3rem;
     width: -moz-fit-content;

@@ -9,7 +9,7 @@ export default function RegisterPage() {
     const getCurrentTime = () => new Date().getFullYear();
     const handleSubmit = e => {
         e.preventDefault();
-    
+
         emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
             .then(() => {
                 alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
@@ -46,11 +46,18 @@ export default function RegisterPage() {
                     <div>
                         <label htmlFor="level">Cấp đai:</label>
                         <select name="level" id="level">
-                            <option value="white" defaultValue="white">Trắng</option>
-                            <option value="yellow">Vàng</option>
-                            <option value="green">Xanh lá</option>
-                            <option value="blue">Xanh dương</option>
-                            <option value="black">Đen</option>
+                            <option value="white-9" defaultValue="white">Trắng KYU 9</option>
+                            <option value="yellow-8">Vàng KYU 8</option>
+                            <option value="blue-7">Xanh dương KYU 7</option>
+                            <option value="green-6">Xanh lá KYU 6</option>
+                            <option value="green-5">Xanh lá KYU 5</option>
+                            <option value="violet-4">Tím KYU 4</option>
+                            <option value="brown-3">Nâu KYU 3</option>
+                            <option value="brown-2">Nâu KYU 2</option>
+                            <option value="brown-1">Nâu KYU 1</option>
+                            <option value="black-1">Đen nhất đẳng</option>
+                            <option value="black-2">Đen nhị đẳng</option>
+                            <option value="black-3">Đen tam đẳng</option>
                         </select>
                     </div>
                     <div>
