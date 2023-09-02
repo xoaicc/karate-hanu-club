@@ -5,16 +5,16 @@ import Page, { AboutPage, ContactPage, MemberPage, EventPage, RegisterPage, Page
 
 export default function App() {
     const router = createBrowserRouter(createRoutesFromElements(
-        <Route path="/" element={ <Root /> }>
-            <Route index element={ <HomePage /> } />
-            <Route path="page" element={ <Page /> }>
-                <Route path="about" element={ <AboutPage /> } />
-                <Route path="contact" element={ <ContactPage /> } />
-                <Route path="member" element={ <MemberPage /> } />
-                <Route path="event" element={ <EventPage /> } />
-                <Route path="register" element={ <RegisterPage /> } />
+        <Route path="/" element={<Root />}>
+            <Route index element={<HomePage />} />
+            <Route path="page" element={<Page />}>
+                <Route path="about" element={<AboutPage />} />
+                <Route path="contact" element={<ContactPage />} />
+                <Route path="member" element={<MemberPage />} />
+                <Route path="event" element={<EventPage />} />
+                <Route path="register" element={<RegisterPage />} />
             </Route>
-            <Route path="*" element={ <PageNotFound /> } />
+            <Route path="*" element={<PageNotFound />} />
         </Route>
     ));
 

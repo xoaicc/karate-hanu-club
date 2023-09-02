@@ -13,7 +13,7 @@ export default function ContactPage() {
                         <li>Điện thoại: <br /><span><a href="tel:+84378890297">+84 378 890 297</a></span></li>
                         <li>Hòm thư: <br /><span><a href="mailto:banchunhiem@karatehanu.club">Banchunhiem@karatehanu.club</a></span></li>
                         <li>Fanpage: <br /><span><a href="https://www.facebook.com/karatehanu.club">CLB Karate HANU</a></span></li>
-                        <li>Nhóm Facebook: <br /><span><a href="https://www.facebook.com/groups/karatehanu.club">CLB Karatedo HANU (ĐH Hà Nội)</a></span></li>
+                        <li>Nhóm Facebook: <br /><span><a href="https://www.facebook.com/groups/karatehanu.club">CLB Karate HANU (ĐH Hà Nội)</a></span></li>
                     </ul>
                 </FlatBlock>
             </div>

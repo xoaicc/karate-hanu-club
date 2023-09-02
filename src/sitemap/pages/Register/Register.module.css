@@ -29,23 +29,31 @@ form div label:first-child {
 form div input:not(input[type="radio"]):not(input[type="submit"]),
 form div select {
     display: inline-block;
+    height: 2rem;
     width: 60%;
     border-radius: .5rem;
 }
-form div input + label {
+
+form div input+label {
     margin-left: 2%;
     margin-right: 5%;
 }
+
 form div input[type="radio"] {
     accent-color: var(--color-2l-100);
 }
-form div input[type="submit"] {
+
+form div button {
     margin: 0 auto;
     margin-top: 2rem;
     padding: 5px;
     display: block;
+    height: 2rem;
     width: 50%;
+    border: 3px solid var(--color-2l-100);
     border-radius: .5rem;
+    font-family: inherit;
+    background-color: inherit;
     cursor: pointer;
 }
 
@@ -59,7 +67,7 @@ form div div label img {
         width: 90%;
     }
 
-    form div input + label {
+    form div input+label {
         margin-left: 1%;
         margin-right: 4%;
     }

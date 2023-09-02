@@ -10,12 +10,11 @@ export default function RegisterPage() {
     const handleSubmit = e => {
         e.preventDefault();
 
-        emailjs.sendForm('service_karate_hanu', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
+        emailjs.sendForm('service_karate_hanu_2', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
             .then(() => {
                 alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
                 e.target.reset();
                 Cookies.set("form submission", true);
-                window.location.reload();
             }, () => {
                 alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
             });
@@ -76,7 +75,7 @@ export default function RegisterPage() {
                         </div>
                     </div>
                     <div>
-                        <input type="submit" id="submit" disabled={Cookies.get("form submission")} value="Gửi đơn" />
+                        <button type="submit" id="submit" disabled={Cookies.get("form submission")}>Gửi đơn</button>
                     </div>
                 </FlatBlock>
             </form>
