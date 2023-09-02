@@ -15,6 +15,7 @@ export default function RegisterPage() {
                 alert("Chúc mừng bạn đã gửi đơn đăng ký tham gia CLB Karate HANU thành công! Hãy kiểm tra email của bạn.");
                 e.target.reset();
                 Cookies.set("form submission", true);
+                window.location.reload();
             }, () => {
                 alert("Xin lỗi! Có điều gì đó không đúng đã xảy ra. Hãy báo cáo cho chúng mình qua Fanpage hoặc thử lại.");
             });

@@ -22,14 +22,15 @@ form div label span {
 
 form div label:first-child {
     display: inline-block;
+    height: 100%;
     width: 40%;
     vertical-align: middle;
 }
 
-form div input:not(input[type="radio"]):not(input[type="submit"]),
+form div input:not(input[type="radio"]),
 form div select {
     display: inline-block;
-    height: 2rem;
+    height: 100%;
     width: 60%;
     border-radius: .5rem;
 }
@@ -53,8 +54,14 @@ form div button {
     border: 3px solid var(--color-2l-100);
     border-radius: .5rem;
     font-family: inherit;
+    color: #000;
     background-color: inherit;
     cursor: pointer;
+}
+
+form div button[disabled] {
+    color: #c0c9d7;
+    cursor: default;
 }
 
 form div div label img {
