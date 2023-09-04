@@ -69,11 +69,11 @@ export function MemberCard({ info }) {
                     <p>{ageIcon} {calcAge()}</p>
                     <p>{genderIcon} {info.gender}</p>
                 </div>
-                {!info.isLeave && <p>Đã tham gia {calcActiceDate()} tháng</p>}
+                {info.isLeave ? <p>Từng tham gia</p> : <p>Đã tham gia {calcActiceDate()} tháng</p>}
                 <div className={styles.socialBar}>
-                    <a href={`https://www.facebook.com/${info.socialProfile.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>
-                    <a href={`https://www.instagram.com/${info.socialProfile.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>
-                    <a href={`https://zalo.me/${info.socialProfile.zalo}`}><img src={require("../../../assets/images/SocialLogo/zalo-logo.png")} alt="Zalo logo" /></a>
+                    {info.socialProfile.facebook && <a href={`https://www.facebook.com/${info.socialProfile.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>}
+                    {info.socialProfile.instagram && <a href={`https://www.instagram.com/${info.socialProfile.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>}
+                    {info.socialProfile.zalo && <a href={`https://zalo.me/${info.socialProfile.zalo}`}><img src={require("../../../assets/images/SocialLogo/zalo-logo.png")} alt="Zalo logo" /></a>}
                 </div>
             </div>
         </FlatBlock>

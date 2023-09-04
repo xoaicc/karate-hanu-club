@@ -46,18 +46,18 @@ export default function RegisterPage() {
                     <div>
                         <label htmlFor="level">Cấp đai:</label>
                         <select name="level" id="level">
-                            <option value="white-9" defaultValue="white">Trắng KYU 9</option>
-                            <option value="yellow-8">Vàng KYU 8</option>
-                            <option value="blue-7">Xanh dương KYU 7</option>
-                            <option value="green-6">Xanh lá KYU 6</option>
-                            <option value="green-5">Xanh lá KYU 5</option>
-                            <option value="violet-4">Tím KYU 4</option>
-                            <option value="brown-3">Nâu KYU 3</option>
-                            <option value="brown-2">Nâu KYU 2</option>
-                            <option value="brown-1">Nâu KYU 1</option>
-                            <option value="black-1">Đen nhất đẳng</option>
-                            <option value="black-2">Đen nhị đẳng</option>
-                            <option value="black-3">Đen tam đẳng</option>
+                            <option value="Trắng KYU 9" defaultValue="Trắng KYU 9">Trắng KYU 9</option>
+                            <option value="Vàng KYU 8">Vàng KYU 8</option>
+                            <option value="Xanh dương KYU 7">Xanh dương KYU 7</option>
+                            <option value="Xanh lá KYU 6">Xanh lá KYU 6</option>
+                            <option value="Xanh lá KYU 5">Xanh lá KYU 5</option>
+                            <option value="Tím KYU 4">Tím KYU 4</option>
+                            <option value="Nâu KYU 3">Nâu KYU 3</option>
+                            <option value="Nâu KYU 2">Nâu KYU 2</option>
+                            <option value="Nâu KYU 1">Nâu KYU 1</option>
+                            <option value="Đen nhất đẳng">Đen nhất đẳng</option>
+                            <option value="Đen nhị đẳng">Đen nhị đẳng</option>
+                            <option value="Đen tam đẳng">Đen tam đẳng</option>
                         </select>
                     </div>
                     <div>
