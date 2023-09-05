@@ -34,6 +34,23 @@ export const MEMBERS = [
         isLeave: false
     },
     {
+        id: "m03",
+        avatar: "m03.jpg",
+        fullName: "Nguyễn Thị Thu Trang",
+        birthday: "2002-11-17",
+        gender: "Nữ",
+        role: "Thành viên CLB",
+        level: "Tím KYU 4",
+        joinDate: "2019-09-01",
+        socialProfile: {
+            facebook: "profile.php?id=100023122844526",
+            instagram: "Iam_tranganh",
+            zalo: "0989103281"
+        },
+        featured: true,
+        isLeave: false
+    },
+    {
         id: "m04",
         avatar: "m04.jpg",
         fullName: "Trần Tuấn Hưng",
@@ -81,7 +98,7 @@ export const MEMBERS = [
             instagram: "",
             zalo: "0976956400"
         },
-        featured: true,
+        featured: false,
         isLeave: false
     }
 ]
