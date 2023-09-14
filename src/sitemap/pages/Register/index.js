@@ -9,6 +9,7 @@ export default function RegisterPage() {
     const getCurrentTime = () => new Date().getFullYear();
     const handleSubmit = e => {
         e.preventDefault();
+        alert("Chờ chút nghen...");
 
         emailjs.sendForm('service_karate_hanu_2', 'template_karate_hanu', form.current, 'kHs6dn52cAEWjm5JU')
             .then(() => {
