@@ -20,9 +20,10 @@ export function MemberCard({ info }) {
         const today = new Date();
         const joinDate = new Date(info.joinDate);
 
-        let monCount = (today.getFullYear() - joinDate.getFullYear()) * 12 + (today.getMonth() - joinDate.getMonth());
-
-        return monCount;
+        if (info.leaveDate) {
+            const leaveDate = new Date(info.leaveDate);
+            return (leaveDate.getFullYear() - joinDate.getFullYear()) * 12 + (leaveDate.getMonth() - joinDate.getMonth());
+        } else return (today.getFullYear() - joinDate.getFullYear()) * 12 + (today.getMonth() - joinDate.getMonth());
     };
 
     const getColorBelt = () => {
@@ -69,7 +70,7 @@ export function MemberCard({ info }) {
                     <p>{ageIcon} {calcAge()}</p>
                     <p>{genderIcon} {info.gender}</p>
                 </div>
-                {info.isLeave ? <p>Từng tham gia</p> : <p>Đã tham gia {calcActiceDate()} tháng</p>}
+                <p>{info.leaveDate ? "Từng" : "Đã"} tham gia <span className={`${styles.activeDate} ${info.leaveDate && styles.wasLeave}`}>{calcActiceDate()} tháng</span></p>
                 <div className={styles.socialBar}>
                     {info.socialProfile.facebook && <a href={`https://www.facebook.com/${info.socialProfile.facebook}`}><img src={require("../../../assets/images/SocialLogo/facebook-logo.png")} alt="Facebook logo" /></a>}
                     {info.socialProfile.instagram && <a href={`https://www.instagram.com/${info.socialProfile.instagram}`}><img src={require("../../../assets/images/SocialLogo/instagram-logo.png")} alt="Instagram logo" /></a>}

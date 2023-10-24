@@ -12,26 +12,26 @@ export const EVENTS = {
                 },
                 {
                     id: "e01mm02",
-                    title: "Chụp riêng với bạn",
+                    title: "Chụp riêng với bạn N.Trang",
                     url: "e01/mm02.jpg"
                 },
                 {
                     id: "e01mm03",
-                    title: "Chụp riêng với bạn",
+                    title: "Chụp riêng với bạn H.Linh",
                     url: "e01/mm03.jpg"
                 },
                 {
                     id: "e01mm04",
-                    title: "Chụp riêng với bạn",
+                    title: "Chụp riêng với bạn P.Anh",
                     url: "e01/mm04.jpg"
                 },
                 {
                     id: "e01mm05",
-                    title: "Chụp riêng với bạn",
+                    title: "Chụp riêng với bạn T.Hương",
                     url: "e01/mm05.jpg"
                 }
             ],
-            featured: true
+            featured: false
         },
         {
             id: "e02",
@@ -160,6 +160,29 @@ export const EVENTS = {
                     id: "e08mm02",
                     title: "Hoàn thành kỳ thi, kỷ niệm các CLB khu vực",
                     url: "e08/mm02.jpg"
+                }
+            ],
+            featured: true
+        },
+        {
+            id: "e09",
+            title: "Thay đổi trước thềm năm học mới 2023",
+            eventDate: "2023/10/10",
+            moments: [
+                {
+                    id: "e09mm01",
+                    title: "Tân sinh viên 2023",
+                    url: "e09/mm01.jpg"
+                },
+                {
+                    id: "e09mm02",
+                    title: "Tân sinh viên 2023",
+                    url: "e09/mm02.jpg"
+                },
+                {
+                    id: "e09mm03",
+                    title: "Tân sinh viên 2023",
+                    url: "e09/mm03.jpg"
                 }
             ],
             featured: true

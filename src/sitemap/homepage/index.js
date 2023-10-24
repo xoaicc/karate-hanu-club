@@ -38,7 +38,7 @@ export default function HomePage() {
                             </FlatBlock>
                             <div id={styles.statisticNumber}>
                                 <FlatBlock part="2" mix={true} center={true}>
-                                    <h4><span className={styles.counterNumber}>30+</span>Thành viên từng tham gia</h4>
+                                    <h4><span className={styles.counterNumber}>50+</span>Thành viên từng tham gia</h4>
                                 </FlatBlock>
                                 <FlatBlock part="2" mix={true} center={true}>
                                     <h4><span className={styles.counterNumber}>4+</span>Năm hoạt động</h4>

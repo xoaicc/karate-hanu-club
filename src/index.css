@@ -35,11 +35,14 @@ html {
   position: relative;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 15px 0;
 }
 
@@ -51,14 +54,18 @@ li {
   list-style: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   padding: 3px;
   background-color: var(--color-0l-100);
   border: 3px solid var(--color-2l-100);
   font-family: 'JetBrains Mono', monospace;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   border: 3px solid var(--color-5l-100);
 }

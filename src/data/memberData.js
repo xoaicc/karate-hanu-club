@@ -8,13 +8,13 @@ export const MEMBERS = [
         role: "Chủ nhiệm CLB",
         level: "Đen tam đẳng",
         joinDate: "2019-09-01",
+        leaveDate: "",
         socialProfile: {
             facebook: "ho.giang.37604",
             instagram: "",
             zalo: "0378890297"
         },
-        featured: true,
-        isLeave: false
+        featured: true
     },
     {
         id: "m02",
@@ -25,13 +25,13 @@ export const MEMBERS = [
         role: "Phó chủ nhiệm CLB",
         level: "Xanh dương KYU 7",
         joinDate: "2022-08-15",
+        leaveDate: "",
         socialProfile: {
             facebook: "vuong.xoaic",
             instagram: "xoaicc",
             zalo: "0383398867"
         },
-        featured: true,
-        isLeave: false
+        featured: true
     },
     {
         id: "m03",
@@ -42,13 +42,13 @@ export const MEMBERS = [
         role: "Thành viên CLB",
         level: "Tím KYU 4",
         joinDate: "2019-09-01",
+        leaveDate: "2022-12-01",
         socialProfile: {
             facebook: "profile.php?id=100023122844526",
             instagram: "Iam_tranganh",
             zalo: "0989103281"
         },
-        featured: true,
-        isLeave: false
+        featured: true
     },
     {
         id: "m04",
@@ -59,13 +59,13 @@ export const MEMBERS = [
         role: "Thành viên CLB",
         level: "Đen nhất đẳng",
         joinDate: "2022-11-01",
+        leaveDate: "",
         socialProfile: {
             facebook: "hung.roman.511",
             instagram: "",
             zalo: ""
         },
-        featured: true,
-        isLeave: false
+        featured: true
     },
     {
         id: "m05",
@@ -76,13 +76,13 @@ export const MEMBERS = [
         role: "Thành viên CLB",
         level: "Trắng KYU 9",
         joinDate: "2019-09-01",
+        leaveDate: "2023-06-01",
         socialProfile: {
             facebook: "",
             instagram: "",
             zalo: ""
         },
-        featured: false,
-        isLeave: true
+        featured: false
     },
     {
         id: "m06",
@@ -93,12 +93,12 @@ export const MEMBERS = [
         role: "Thành viên CLB",
         level: "Xanh lá KYU 6",
         joinDate: "2021-09-01",
+        leaveDate: "2023-06-01",
         socialProfile: {
             facebook: "profile.php?id=100095446328056",
             instagram: "",
             zalo: "0976956400"
         },
-        featured: false,
-        isLeave: false
+        featured: false
     }
 ]
