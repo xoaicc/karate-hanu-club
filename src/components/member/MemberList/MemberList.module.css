@@ -8,12 +8,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .container {
-        overflow-x: scroll;
-    }
-
     .wrapper {
-        width: fit-content;
-        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
