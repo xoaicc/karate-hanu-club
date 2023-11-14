@@ -54,7 +54,7 @@ export const EVENTS = {
                     url: "e02/mm03.jpg"
                 }
             ],
-            featured: true
+            featured: false
         },
         {
             id: "e03",
@@ -148,7 +148,7 @@ export const EVENTS = {
         },
         {
             id: "e08",
-            title: "Kỳ thi lên đai các CLB năm 2023",
+            title: "Kỳ thi lên đai các CLB lần 1/2023",
             eventDate: "2023/05/07",
             moments: [
                 {
@@ -186,7 +186,30 @@ export const EVENTS = {
                 }
             ],
             featured: true
-        }
+        },
+        {
+            id: "e10",
+            title: "Kỳ thi lên đai các CLB lần 2/2023",
+            eventDate: "2023/11/12",
+            moments: [
+                {
+                    id: "e10mm01",
+                    title: "Cùng nhau khởi động chuẩn bị",
+                    url: "e10/mm01.jpg"
+                },
+                {
+                    id: "e10mm02",
+                    title: "Tất cả thí sinh đã sẵn sàng!",
+                    url: "e10/mm02.jpg"
+                },
+                {
+                    id: "e10mm03",
+                    title: "Chụp ảnh lưu niệm",
+                    url: "e10/mm03.jpg"
+                }
+            ],
+            featured: true
+        },
     ],
     isSelected: ""
 }

@@ -60,7 +60,7 @@ export function MemberCard({ info }) {
     return (
         <FlatBlock part="4" mix={true} multiple={true} center={true}>
             <div className={styles.wrapper}>
-                <img src={info.avatar && require(`../../../assets/images/Member/${info.avatar}`)} className={styles.avatar} alt="Member avatar" />
+                <img src={info.avatar ? require(`../../../assets/images/Member/${info.avatar}`) : require(`../../../assets/images/Member/placehover.jpg`)} className={styles.avatar} alt="Member avatar" />
                 <h3>{info.fullName}</h3>
                 <h4>{info.role}</h4>
                 <div className={`${styles.belt} ${getColorBelt()}`}>
